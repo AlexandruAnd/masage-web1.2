@@ -4,7 +4,7 @@ window.Massage = {
     postPatient: function () {
 
         $.ajax( {
-            url: Massage.API_URL +"/patient",
+            url: Massage.API_URL +"/patients",
                 method: "POST"
         })
     }

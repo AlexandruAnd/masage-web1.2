@@ -376,45 +376,45 @@
 
     <!-- form itself end-->
     <form id="test-form" class="white-popup-block mfp-hide">
-                            <div class="popup_box">
-                                <div class="popup_inner">
-                                    <h3>Make an Appointment</h3>
-                                    <form action="#">
-                                        <div class="row">
-                                            <div class="col-xl-6">
-                                                <input id="datepicker" placeholder="Pick date">
-                                            </div>
-<!--                                            <div class="col-xl-6">-->
-<!--                                                <input id="datepicker2" placeholder="Suitable time">-->
-<!--                                            </div>-->
-                                            <div class="col-xl-6">
-                                                <select class="form-select wide" id="default-select" class="">
-                                                    <option data-display="Massage">Massage Tipe</option>
-                                                    <option value="1">Swedish massage</option>
-                                                    <option value="2">Hot stone massage</option>
-                                                    <option value="3">Sport Massage</option>
-                                                </select>
-                                            </div>
+        <div class="popup_box">
+            <div class="popup_inner">
+                <h3>Make an Appointment</h3>
+                <form  class="form-contact contact_form" id="contact-test" method="post" novalidate="novalidate">
+                    <div class="row">
+                        <div class="col-xl-6 valid">
+                            <input type="text" id="datepicker" name="datepicker" placeholder="Pick date">
+                        </div>
 
-
-
-
+                        <div class="col-xl-6 valid">
+                            <select type="text" name="massage" class="form-select wide" id="default-select">
+                                <option data-display="Massage">Massage Tipe</option>
+                                <option value="1">Swedish massage</option>
+                                <option value="2">Hot stone massage</option>
+                                <option value="3">Sport Massage</option>
+                            </select>
 
                         </div>
-                        <div class="col-xl-6">
-                            <input type="text"  placeholder="Name">
+                        <div class="col-xl-6 valid" id="name">
+                            <input type="text" name="name" placeholder="Name">
                         </div>
-                        <div class="col-xl-6">
-                            <input type="text"  placeholder="Phone no.">
+                        <div class="col-xl-6 valid" id="phone">
+                            <input type="text" name="phone" placeholder="Phone no.">
+                        </div>
+                        <div class="col-xl-12 valid" id="email">
+                            <input type="email" name="email" placeholder="Email">
                         </div>
                         <div class="col-xl-12">
-                            <input type="email"  placeholder="Email">
-                        </div>
-                        <div class="col-xl-12">
-                            <button type="submit" class="boxed-btn3">Confirm</button>
+                            <button type="submit" class="button buton-test-form boxed-btn3">Confirm</button>
                         </div>
                     </div>
                 </form>
+            </div>
+        </div>
+    </form>
+    </div>
+    </div>
+    </form>
+
 
     <!-- form itself end -->
 
@@ -438,6 +438,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/gijgo.min.js"></script>
     <!--contact js-->
+    <script src="js/contact-test.js"></script>
     <script src="js/contact.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>
     <script src="js/jquery.form.js"></script>
